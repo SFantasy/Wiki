@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Flexible boxes</title>
+    <link rel="stylesheet" href="./css/screen.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./css/gollum.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./css/syntax.css" type="text/css" charset="utf-8" />
+    <script src="./javascript/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="./javascript/jquery.text_selection-1.0.0.min.js" type="text/javascript"></script>
+    <script src="./javascript/jquery.previewable_comment_form.js" type="text/javascript"></script>
+    <script src="./javascript/jquery.tabs.js" type="text/javascript"></script>
+    <script src="./javascript/gollum.js" type="text/javascript"></script>
+    <script src="./javascript/MathJax/MathJax.js" type="text/javascript">
+      MathJax.OutputJax.fontDir = "http://github-assets.s3.amazonaws.com/javascripts/MathJax/fonts"
+      MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"]
+      })
+    </script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="site">
+        <div id="guides">
+          <div class="guide">
+            <div class="main">
+              <div class="actions">
+                <div>
+                  <a href="./Home.html">Home</a>
+                </div>
+              </div>
+              <h1>Flexible boxes</h1>
+              <div class="content wikistyle gollum markdown">
+                <p>由于现有的浏览器对弹性盒（flexible box）实现的标准问题，我们需要通过对不同机型、浏览器的测试寻找最兼容的代码。</p>
+
+<div class="highlight">
+<pre><span class="c1">// Build flexible box</span>
+<span class="nl">display:</span> <span class="n">flex</span><span class="p">;</span>
+<span class="nl">display:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">flex</span><span class="p">;</span>
+<span class="nl">display:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">flex</span><span class="p">;</span>
+<span class="nl">display:</span> <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">flex</span><span class="p">;</span>
+<span class="nl">display:</span> <span class="n">box</span><span class="p">;</span>
+<span class="nl">display:</span> <span class="n">flexbox</span><span class="p">;</span>
+<span class="nl">display:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+<span class="nl">display:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>
+
+<span class="c1">// Flex direction</span>
+<span class="n">flex</span><span class="o">-</span><span class="nl">direction:</span> <span class="n">row</span><span class="p">;</span>
+<span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">flex</span><span class="o">-</span><span class="nl">direction:</span> <span class="n">row</span><span class="p">;</span>
+<span class="c1">//</span>
+<span class="n">flex</span><span class="o">-</span><span class="nl">grow:</span> <span class="mh">1</span><span class="p">;</span>
+<span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">flex</span><span class="o">-</span><span class="nl">row:</span> <span class="mh">1</span><span class="p">;</span>
+</pre>
+</div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="admin">
+            <div style="float: left;">
+              <small>Last edited by <b>Fantasy Shao</b>, 2014-08-12 09:18:52</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
