@@ -12,9 +12,19 @@ html, body {
   color: black;
 }
 
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #777;
+    text-decoration: underline;
+}
+
 body {
-  background-color: white;
-  font: 13.34px helvetica, arial, freesans, clean, sans-serif;
+  background-color: #f5f5f5;
+  font: 13.34px Lora, Georgia, sans-serif;
   *font-size: small;
 }
 
@@ -226,9 +236,8 @@ html {overflow-y: scroll;}
 
 .wikistyle h2 {
   font-size: 150% !important;
-  margin-top: 1.5em !important;
-  border-top: 4px solid #e0e0e0 !important;
-  padding-top: .5em !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd !important;
 }
 
 .wikistyle h3 {
