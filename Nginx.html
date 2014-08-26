@@ -4,8 +4,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
-    <meta name="keywords" content="MongoDB">
-    <title>MongoDB</title>
+    <meta name="keywords" content="Nginx">
+    <title>Nginx</title>
     <link rel="stylesheet" href="./css/screen.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="./css/gollum.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="./css/syntax.css" type="text/css" charset="utf-8" />
@@ -33,20 +33,21 @@
                   <a href="./Home.html">Home</a>
                 </div>
               </div>
-              <h1>MongoDB</h1>
+              <h1>Nginx</h1>
               <div class="content wikistyle gollum markdown">
-                <h2>Operations</h2>
+                <h2>Install</h2>
+
+<p>在OS X上安装Nginx:</p>
 
 <div class="highlight">
-<pre><span class="n">show</span> <span class="n">dbs</span>
-<span class="n">use</span> <span class="n">dbname</span>
-<span class="o">//</span> 查询集合名
-<span class="n">db</span><span class="p">.</span><span class="n">getCollectionNames</span><span class="p">()</span>
-<span class="o">//</span> 查询所有记录
-<span class="n">db</span><span class="p">.</span><span class="n">users</span><span class="p">.</span><span class="nb">find</span><span class="p">()</span>
+<pre><span class="n">brew</span> <span class="n">install</span> <span class="n">nginx</span>
 </pre>
 </div>
 
+
+<p>以此方式安装的Nginx是不带附加模块的（如<code>http_sub_module</code>）。</p>
+
+<h3>问题</h3>
 
               </div>
             </div>
