@@ -4,8 +4,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
-    <meta name="keywords" content="NodeJS">
-    <title>NodeJS</title>
+    <meta name="keywords" content="HTTP">
+    <title>HTTP</title>
     <link rel="stylesheet" href="./css/screen.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="./css/gollum.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="./css/syntax.css" type="text/css" charset="utf-8" />
@@ -33,35 +33,63 @@
                   <a href="./Home.html">Home</a>
                 </div>
               </div>
-              <h1>NodeJS</h1>
+              <h1>HTTP</h1>
               <div class="content wikistyle gollum markdown">
-                <h1>NodeJS</h1>
+                <h2>HTTP/1.1</h2>
 
-<h2>Topics</h2>
+<p><a href="http://tools.ietf.org/html/rfc7231">HTTP/1.1</a> is the current version of HTTP.</p>
+
+<h3>Status Code</h3>
+
+<h4>1XX</h4>
+
+<p><strong>Informational</strong></p>
 
 <ul>
-<li><a class="internal absent" href="/Atom-shell.html">Atom-shell</a></li>
+<li>100: Continue</li>
+<li>101: Switching protocols</li>
+<li>102: Processing</li>
 </ul>
 
-<h2>Frameworks</h2>
+<h4>2XX</h4>
+
+<p><strong>Success</strong></p>
 
 <ul>
-<li><a class="internal absent" href="/Express.html">Express</a></li>
-<li><a class="internal present" href="/Koa.html">Koa</a></li>
+<li>200: OK</li>
+<li>201: Created</li>
+<li>202: Accepted</li>
 </ul>
 
-<h2>Resources</h2>
+<h4>3XX</h4>
+
+<p><strong>Redirection</strong></p>
 
 <ul>
-<li><a href="//nodejs.org">NodeJS.org</a></li>
-<li><a href="//npmjs.org">NPM</a></li>
-<li><a href="https://nodejsmodules.org/">Popular modules</a></li>
+<li>301: Moved Permanently</li>
+<li>302: Found</li>
 </ul>
 
-<h3>Communities</h3>
+<h4>4XX</h4>
+
+<p><strong>Client Error</strong></p>
 
 <ul>
-<li><a href="http://cnodejs.org/">CNodeJS</a></li>
+<li>400: Bad Request</li>
+<li>403: Forbidden</li>
+<li>404: Not Found</li>
+<li>405: Method Not Allowed</li>
+<li>408: Request Time Out</li>
+</ul>
+
+<h4>5XX</h4>
+
+<p><strong>Server Error</strong></p>
+
+<ul>
+<li>500: Internal Server Error</li>
+<li>503: Service Unavaliable</li>
+<li>504: Gateway Time Out</li>
 </ul>
 
               </div>
