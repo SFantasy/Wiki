@@ -37,6 +37,67 @@
               <div class="content wikistyle gollum markdown">
                 <h2>New Features</h2>
 
+<h3><a href="http://davidwalsh.name/css-supports">CSS supports</a></h3>
+
+<ul>
+<li>Basic use</li>
+</ul>
+
+<div class="highlight">
+<pre><span class="p">@</span><span class="n">supports</span> <span class="p">(</span><span class="n">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">div</span> <span class="p">{</span> <span class="n">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre>
+</div>
+
+
+<ul>
+<li>
+<code>not</code>关键字</li>
+</ul>
+
+<div class="highlight">
+<pre><span class="p">@</span><span class="n">supports</span> <span class="n">not</span> <span class="p">(</span><span class="n">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">div</span> <span class="p">{</span> <span class="n">float</span><span class="p">:</span> <span class="n">left</span><span class="p">;</span> <span class="p">}</span> <span class="o">/*</span> <span class="n">alternative</span> <span class="n">styles</span> <span class="o">*/</span>
+<span class="p">}</span>
+</pre>
+</div>
+
+
+<ul>
+<li>Logic operations</li>
+</ul>
+
+<div class="highlight">
+<pre><span class="cm">/* or */</span>
+<span class="p">@</span><span class="n">supports</span> <span class="p">(</span><span class="nl">display:</span> <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">flex</span><span class="p">)</span> <span class="k">or</span>
+          <span class="p">(</span><span class="nl">display:</span> <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">flex</span><span class="p">)</span> <span class="k">or</span>
+          <span class="p">(</span><span class="nl">display:</span> <span class="n">flex</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="cm">/* use styles here */</span>
+<span class="p">}</span>
+
+<span class="cm">/* and */</span>
+<span class="p">@</span><span class="n">supports</span> <span class="p">(</span><span class="nl">display:</span> <span class="n">flex</span><span class="p">)</span> <span class="k">and</span> <span class="p">(</span><span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="nl">appearance:</span> <span class="n">caret</span><span class="p">)</span> <span class="p">{</span>
+	
+	<span class="cm">/* something crazy here */</span>
+<span class="p">}</span>
+</pre>
+</div>
+
+
+<ul>
+<li>JavaScript support</li>
+</ul>
+
+<p>绑定在<code>window</code>上的全局对象<code>CSS</code>:</p>
+
+<div class="highlight">
+<pre><span class="n">var</span> <span class="n">supportsFlex</span> <span class="p">=</span> <span class="n">CSS</span><span class="p">.</span><span class="n">supports</span><span class="p">(</span>"<span class="n">display</span>"<span class="p">,</span> "<span class="n">flex</span>"<span class="p">);</span>
+</pre>
+</div>
+
+
 <h3><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">CSS variables</a></h3>
 
 <p>现有的CSS预处理器都包含了变量等概念，CSS也不甘落后，变量的特性相信在不久的未来也会为广大浏览器厂商所接受。</p>
@@ -56,6 +117,8 @@
 </div>
 
 
+<h2><a class="internal present" href="/CSS-properties.html">CSS properties</a></h2>
+
 <h2><a class="internal present" href="/CSS-common-problems.html">CSS common problems</a></h2>
 
 <h2>Compatibility</h2>
@@ -69,7 +132,7 @@
           </div>
           <div class="admin">
             <div style="float: left;">
-              <small>Last edited by <b>Fantasy Shao</b>, 2014-09-17 14:08:41</small>
+              <small>Last edited by <b>Fantasy Shao</b>, 2014-09-18 10:23:49</small>
             </div>
           </div>
         </div>
