@@ -61,6 +61,20 @@
 </div>
 
 
+<h3>UITabBarItem</h3>
+
+<h4>自定义UITabBarItem的背景图</h4>
+
+<div class="highlight">
+<pre><span class="n">UITabBarItem</span> <span class="o">*</span><span class="n">itemOne</span> <span class="o">=</span> <span class="p">[</span><span class="n">tabBar</span><span class="p">.</span><span class="n">items</span> <span class="nl">objectAtIndex:</span><span class="mi">0</span><span class="p">];</span>
+<span class="n">UIImage</span> <span class="o">*</span><span class="n">itemOneImage</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIImage</span> <span class="nl">imageNamed:</span><span class="s">@"Shape.png"</span><span class="p">];</span>
+<span class="n">itemOneImage</span> <span class="o">=</span> <span class="p">[</span><span class="n">itemOneImage</span> <span class="nl">imageWithRenderingMode:</span><span class="n">UIImageRenderingModeAlwaysOriginal</span><span class="p">];</span>
+<span class="n">itemOne</span><span class="p">.</span><span class="n">selectedImage</span> <span class="o">=</span> <span class="n">itemOneImage</span><span class="p">;</span>
+<span class="p">[</span><span class="n">itemOne</span> <span class="nl">setImage:</span><span class="n">itemOneImage</span><span class="p">];</span>
+</pre>
+</div>
+
+
 <h2>About <code>main.m</code>
 </h2>
 
@@ -73,7 +87,7 @@
           </div>
           <div class="admin">
             <div style="float: left;">
-              <small>Last edited by <b>Fantasy Shao</b>, 2014-09-18 20:12:26</small>
+              <small>Last edited by <b>Fantasy Shao</b>, 2014-09-19 19:02:50</small>
             </div>
           </div>
         </div>
