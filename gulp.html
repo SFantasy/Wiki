@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimal-ui">
+    <meta name="keywords" content="gulp">
+    <title>gulp</title>
+    <link rel="stylesheet" href="./css/screen.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./css/gollum.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./css/syntax.css" type="text/css" charset="utf-8" />
+    <script src="./javascript/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="./javascript/jquery.text_selection-1.0.0.min.js" type="text/javascript"></script>
+    <script src="./javascript/jquery.previewable_comment_form.js" type="text/javascript"></script>
+    <script src="./javascript/jquery.tabs.js" type="text/javascript"></script>
+    <script src="./javascript/gollum.js" type="text/javascript"></script>
+    <script src="./javascript/MathJax/MathJax.js" type="text/javascript">
+      MathJax.OutputJax.fontDir = "http://github-assets.s3.amazonaws.com/javascripts/MathJax/fonts"
+      MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"]
+      })
+    </script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="site">
+        <div id="guides">
+          <div class="guide">
+            <div class="main">
+              <div class="actions">
+                <div>
+                  <a href="./Home.html">Home</a>
+                </div>
+              </div>
+              <h1>gulp</h1>
+              <div class="content wikistyle gollum markdown">
+                <p>Official site: <a href="http://gulpjs.com/">gulp.com</a></p>
+
+<h3>Install</h3>
+
+<div class="highlight">
+<pre><span class="n">npm</span> <span class="n">install</span> <span class="n">gulp</span> <span class="o">-</span><span class="n">g</span>
+</pre>
+</div>
+
+
+<h3>Install plugins</h3>
+
+<p>Find plugins <a href="http://gulpjs.com/plugins/">here</a>.</p>
+
+<p>e.g.</p>
+
+<div class="highlight">
+<pre><span class="n">npm</span> <span class="n">install</span> <span class="n">gulp</span><span class="o">-</span><span class="n">concat</span> <span class="o">--</span><span class="n">save</span><span class="o">-</span><span class="n">dev</span>
+</pre>
+</div>
+
+
+<h3>Example</h3>
+
+<p>Sample <code>gulpfile.js</code>:</p>
+
+<div class="highlight">
+<pre><span class="n">var</span> <span class="n">gulp</span> <span class="p">=</span> <span class="n">require</span><span class="p">(</span><span class="s">'gulp'</span><span class="p">);</span>
+<span class="n">var</span> <span class="n">uglify</span> <span class="p">=</span> <span class="n">require</span><span class="p">(</span><span class="s">'gulp-uglify'</span><span class="p">);</span>
+ 
+<span class="n">gulp</span><span class="p">.</span><span class="n">task</span><span class="p">(</span><span class="s">'compress'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">gulp</span><span class="p">.</span><span class="n">src</span><span class="p">(</span><span class="s">'lib/*.js'</span><span class="p">)</span>
+    <span class="p">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">uglify</span><span class="p">())</span>
+    <span class="p">.</span><span class="n">pipe</span><span class="p">(</span><span class="n">gulp</span><span class="p">.</span><span class="n">dest</span><span class="p">(</span><span class="s">'dist'</span><span class="p">))</span>
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<p>then run:</p>
+
+<div class="highlight">
+<pre><span class="n">gulp</span> <span class="n">compress</span>
+</pre>
+</div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="admin">
+            <div style="float: left;">
+              <small>Last edited by <b>Fantasy Shao</b>, 2014-10-09 14:19:55</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
